@@ -4,14 +4,14 @@
     "owner": "Department Owner",
     "type": "Primary, Secundary ...",
     "sources": {
-        "gcp_bigquery": {
+        "bigquery": {
             "syntax": "SELECT COUNT(token) FROM events",
             "labels": [
                 "flag1",
                 "flag2"
             ]
         },
-        "aws_athena": {
+        "aathena": {
             "syntax": "SELECT COUNT(token) FROM [events]"
         },
         "dax": {
