@@ -1,0 +1,21 @@
+{
+    "name": "Metric Name",
+    "description": "Simple metric description, owners and more.",
+    "owner": "Department Owner",
+    "type": "Primary, Secundary ...",
+    "sources": {
+        "gcp_bigquery": {
+            "syntax": "SELECT COUNT(token) FROM events",
+            "labels": [
+                "flag1",
+                "flag2"
+            ]
+        },
+        "aws_athena": {
+            "syntax": "SELECT COUNT(token) FROM [events]"
+        },
+        "dax": {
+            "syntax": "Metric Name = COUNT([events][token])"
+        }
+    }
+}
